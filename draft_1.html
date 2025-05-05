@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vasavi Projects Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #93c5fd;
+    }
+    .banner {
+      background-color: #facc15;
+      color: #000;
+      padding: 10px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+    .label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .projects {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vasavi Projects Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Upload Project</a>
+      <a href="about.html">About Us</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    🚧 Website in Progress – More features and projects coming soon!
+  </div>
+
+  <section class="hero">
+    <h2>Explore, Connect, and Collaborate</h2>
+    <p>Discover amazing projects by Vasavi students. Get inspired or join in!</p>
+  </section>
+
+  <section class="projects">
+    <!-- Project 1 -->
+    <div class="card">
+      <img src="pluto_sdr.jpeg" alt="Real-time SDR project photo" />
+      <div class="card-content">
+        <h3>Real-time Audio Transmission using SDRs</h3>
+        <p><span class="label">Domain:</span> Communication</p>
+        <p><span class="label">Motivation:</span> To build a secure and low latency communication system.</p>
+        <p><span class="label">Things Learned:</span> Working with Pluto SDRs, MATLAB Simulink, GNU Radio, Ham Radio.</p>
+        <p><span class="label">Mistakes to Avoid:</span> Don’t jump to AI tools—read documentation thoroughly.</p>
+        <p><span class="label">Prerequisites:</span> None</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Created by Vasavi Students | Connect • Learn • Build
+  </footer>
+
+</body>
+</html>
